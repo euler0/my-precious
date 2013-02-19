@@ -7,7 +7,6 @@ case $OSTYPE in
 freebsd*)
   export EDITOR=emacs
   ;;
-
 darwin*)
   export EDITOR='subl -w'
   ;;
@@ -17,5 +16,5 @@ CURDIR="$(dirname ${BASH_SOURCE[0]})"
 
 # Add bash aliases.
 if [ -f $CURDIR/.bash_aliases ]; then
-  source $CURDIR//.bash_aliases
+  source $CURDIR/.bash_aliases
 fi
