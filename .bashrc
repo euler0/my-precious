@@ -13,7 +13,9 @@ darwin*)
   ;;
 esac
 
+CURDIR="$(dirname ${BASH_SOURCE[0]})"
+
 # Add bash aliases.
-if [ -f .bash_aliases ]; then
-  source .bash_aliases
+if [ -f $CURDIR/.bash_aliases ]; then
+  source $CURDIR//.bash_aliases
 fi
