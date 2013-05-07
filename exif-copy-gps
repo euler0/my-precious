@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+exif-tool -tagsFromFile $1 -GPS:all $2
