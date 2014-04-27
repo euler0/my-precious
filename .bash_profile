@@ -1,6 +1,5 @@
-# Executed by bash(1) for login shells.
+# The personal initialization file, executed for login shells
 
-CURDIR="$(dirname ${BASH_SOURCE[0]})"
+source $HOME/.profile
 
-source ${CURDIR}/.profile
-source ${CURDIR}/.bashrc
+source $HOME/.bashrc
