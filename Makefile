@@ -4,10 +4,10 @@ all:
 
 osx: common bash gemrc
 
-freebsd: common bash gemrc
-	ln $(LN_FLAGS) $(CURDIR)/.xinitrc $(HOME)/.xinitrc
+freebsd: common bash gemrc x11
 
 common:
+	ln $(LN_FLAGS) $(CURDIR)/.emacs $(HOME)/.emacs
 	ln $(LN_FLAGS) $(CURDIR)/.profile $(HOME)/.profile
 
 bash:
@@ -17,4 +17,6 @@ bash:
 gemrc:
 	ln $(LN_FLAGS) $(CURDIR)/.gemrc $(HOME)/.gemrc
 
-
+x11:
+	ln $(LN_FLAGS) $(CURDIR)/.xinitrc $(HOME)/.xinitrc
+	ln $(LN_FLAGS) $(CURDIR)/.Xdefaults $(HOME)/.Xdefaults
