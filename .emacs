@@ -25,7 +25,7 @@
 ; Ensure the last line of the file ends in a newline.
 (setq require-final-newline t)
 
-; Remove trailing whitespace
+; Remove trailing whitespace.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (font-lock-add-keywords 'c++-mode

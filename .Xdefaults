@@ -40,4 +40,6 @@ xterm*boldMode: on
 urxvt*loginShell: true
 urxvt.perl-ext-common: default,tabbed
 urxvt.font: xft:Bitstream Vera Sans Mono:size=14,xft:NanumGothicCoding
+urxvt.lineSpace: 2
 urxvt.scrollstyle: plain
+urxvt.scrollBar_right: true
