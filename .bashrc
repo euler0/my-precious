@@ -7,3 +7,5 @@ fi
 
 # Avoid succesive duplicates in the bash command history.
 HISTCONTROL=ignoredups
+
+PS1="\h:\W \u$ "
