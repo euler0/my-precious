@@ -5,4 +5,6 @@ export XMODIFIERS=@im=ibus
 export XIM_PROGRAM="ibus-daemon"
 export XIM_ARGS="-r --daemonize --xim"
 
+compton &
+
 exec startxfce4

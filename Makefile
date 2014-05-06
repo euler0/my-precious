@@ -4,7 +4,7 @@ all:
 
 osx: common bash gemrc
 
-freebsd: common bash gemrc x11
+freebsd: common bash compton gemrc x11
 
 common:
 	ln $(LN_FLAGS) $(PWD)/.emacs $(HOME)/.emacs
@@ -13,6 +13,9 @@ common:
 bash:
 	ln $(LN_FLAGS) $(PWD)/.bash_profile $(HOME)/.bash_profile
 	ln $(LN_FLAGS) $(PWD)/.bashrc $(HOME)/.bashrc
+
+compton:
+	ln $(LN_FLAGS) $(PWD)/.config/compton.conf $(HOME)/.config/compton.conf
 
 gemrc:
 	ln $(LN_FLAGS) $(PWD)/.gemrc $(HOME)/.gemrc
