@@ -17,7 +17,7 @@ freebsd*)
 darwin*)
   alias emacs='/usr/local/Cellar/emacs/24.3/bin/emacs -nw'
   export EDITOR='atom -w'
-  export PATH=$HOME/Qt5.2.1/5.2.1/clang_64/bin:$PATH
+  export PATH=$HOME/Qt5.3.0/5.3/clang_64/bin:$PATH
   #export PKG_CONFIG=/etc/X11/lib/pkgconfig/
   #export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk/
   #export NDK_ROOT=/usr/local/Cellar/android-ndk/r8e/
