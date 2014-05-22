@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+date=`date +%F`
+time=`date "+%I.%M.%S %p"`
+
+adb shell screencap -p /sdcard/screenshot.png
+
+sleep 1
+
+adb pull /sdcard/screenshot.png "Screen Shot $date at $time.png"
