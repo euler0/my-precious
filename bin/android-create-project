@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-android create project --target android-21 --name "$1" --path MyFirstApp --activity MainActivity --package $2 --gradle --gradle-version 1.0.0
+android create project --target android-21 --name "$1" --path "$1" --activity MainActivity --package $2 --gradle --gradle-version 1.0.0
