@@ -10,6 +10,12 @@
 (setq ring-bell-function (lambda () nil))
 
 (global-linum-mode 1)
+(setq linum-format 'dynamic)
+(defadvice linum-update-window (around linum-dynamic activate)
+  (let* ((w (length (number-to-string
+		     (count-lines (point-min) (point-max)))))
+	 (linum-format (concat "%" (number-to-string w) "d ")))
+    ad-do-it))
 
 (if window-system
   (tool-bar-mode -1))
