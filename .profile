@@ -16,7 +16,7 @@ freebsd*)
 darwin*)
   alias emacs='/usr/local/opt/emacs/bin/emacs -nw'
   export EDITOR='atom -w'
-  export PATH=$PATH:$HOME/Qt/5.9.2/clang_64/bin:$HOME/Library/Android/sdk/platform-tools
+  export PATH=$PATH:$HOME/Qt/5.10.0/clang_64/bin:$HOME/Library/Android/sdk/platform-tools
   export JAVA_HOME=`/usr/libexec/java_home`
   export DYLD_LIBRARY_PATH=$HOME/.local/lib:$DYLD_LIBRARY_PATH
   export ANDROID_HOME=/usr/local/opt/android-sdk
