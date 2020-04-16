@@ -27,3 +27,5 @@ x11:
 android:
 	ln $(LN_FLAGS) $(PWD)/bin/adb-take-screenshot $(HOME)/local/bin
 	ln $(LN_FLAGS) $(PWD)/bin/android-create-project $(HOME)/local/bin
+
+.PHONY: all osx freebsd common bash compton gemrc x11 android
