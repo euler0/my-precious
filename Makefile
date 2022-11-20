@@ -9,6 +9,7 @@ freebsd: common bash gemrc x11
 common:
 	ln $(LN_FLAGS) $(PWD)/.emacs $(HOME)
 	ln $(LN_FLAGS) $(PWD)/.profile $(HOME)
+	ln $(LN_FLAGS) $(PWD)/.vimrc $(HOME)
 
 bash:
 	ln $(LN_FLAGS) $(PWD)/.bash_profile $(HOME)
