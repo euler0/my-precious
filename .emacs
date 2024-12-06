@@ -1,3 +1,8 @@
+(require `package)
+(add-to-list `package-archives
+	     `("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
 
